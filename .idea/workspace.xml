@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0426daa8-efdb-48e2-84ab-a3788d13d6c7" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YX5BFkdBa1DAEqJGFseaPSoZk9" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ameen\Desktop\shop\shop\wishlist" />
+      <recent name="C:\Users\Ameen\Desktop\shop\shop\wishlist\templates" />
+      <recent name="C:\Users\Ameen\Desktop\shop\shop\cart" />
+      <recent name="C:\Users\Ameen\Desktop\shop\shop\market\static\css" />
+      <recent name="C:\Users\Ameen\Desktop\shop\shop\orders\templates\order" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="shop" type="Python.DjangoServer" factoryName="Django server">
+      <module name="shop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0426daa8-efdb-48e2-84ab-a3788d13d6c7" name="Default Changelist" comment="" />
+      <created>1583075960645</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583075960645</updated>
+      <workItem from="1583075992504" duration="39034000" />
+      <workItem from="1583499132199" duration="2151000" />
+      <workItem from="1583532369325" duration="19000" />
+      <workItem from="1583593840923" duration="662000" />
+      <workItem from="1583600414140" duration="7494000" />
+      <workItem from="1584058887143" duration="1045000" />
+      <workItem from="1584065753958" duration="3870000" />
+      <workItem from="1584116099159" duration="543000" />
+      <workItem from="1584148125244" duration="665000" />
+      <workItem from="1584151203038" duration="827000" />
+      <workItem from="1585257280963" duration="878000" />
+      <workItem from="1585309925379" duration="852000" />
+      <workItem from="1585496329211" duration="716000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

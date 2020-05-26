@@ -1,0 +1,84 @@
+{% extends "product.html" %}
+{% load static %}
+{% load mathfilters %}
+	
+	<!-- Header -->
+
+	<!-- Cart -->
+
+    {% block product %}
+
+        <!-- breadcrumb -->
+	<div class="container">
+		<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
+			<a href="#" class="stext-109 cl8 hov-cl1 trans-04">
+				Home
+				<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+			</a>
+
+			<span class="stext-109 cl4">
+				Checkout
+			</span>
+		</div>
+	</div>
+
+
+	<!-- Shoping Cart -->
+	<div class="bg0 p-t-50 p-b-50">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 col-xl-7 m-lr-auto m-b-50" style="margin: auto; text-align: center; border: 1px solid #117a8b; padding: 10px; border-radius: 10px;">
+                    <form method="post" action="{% url 'orders:order_create' %}">
+                        {% csrf_token %}
+                        {{form.as_p}}<br>
+                        <button type="submit" style="background-color: #405A6C; padding: 10px; color: #b1dfbb">Place order</button>
+		            </form>
+
+				</div>
+
+				<div class="col-sm-10 col-lg-7 col-xl-5 m-lr-auto m-b-50" style="margin: auto; text-align: center">
+                    <div class="order-info" style="border: 1px solid #117a8b; padding: 10px; border-radius: 10px">
+                        <h3>Your Order</h3>
+                        <ul>
+                            {% for item in cart %}
+                                <li>{{item.quantity}} x {{item.product.name}} <span>${{item.total_price}}</span></li>
+                            {% endfor %}<br>
+                                {% if money %}
+                                <li> shipping <span> + ${{ money|sub:cart.get_total_price_after_discount|floatformat:"2" }}</span></li>
+                                {% else %}
+                                    <li> shipping <span>$ ـــــــــــ </span></li>
+                                {% endif %}
+                            {% if cart.coupon %}
+                                <li>
+                                    "{{cart.coupon.code}}" ({{cart.coupon.discount}}% off)
+                                    <span> - ${{cart.get_discount|floatformat:"2"}}</span>
+                                </li>
+                            {% endif %}
+                        </ul><br>
+                        {% if cart.coupon %}
+                            <p>Total: ${{money}}</p>
+                        {% else %}
+                            {% if money %}
+                            <p>Total: ${{money}}</p>
+                            {% else %}
+                            <p>Total: ${{cart.get_total_price}}</p>
+                            {% endif %}
+                        {% endif %}
+
+                    </div><br>
+                    <a class="order-info" href="{% url 'myshop:product_list' %}" style="width: 100%; float: left; text-align: center; background-color: #405A6C; color: #b1dfbb; margin: auto; padding: 10px; border-radius: 10px"> Return to add products</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+    {% endblock product %}
+		
+	
+		
+
+	<!-- Footer -->
+
+
+	<!-- Back to top -->
